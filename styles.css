@@ -1,0 +1,381 @@
+/* Base colors */
+:root {
+    --primary-red: #251e1e;
+    --lighter-red: #777474;
+    --darker-red: #050405;
+    --muted-red: #636062;
+    --accent-red: #a88e9b;
+    --white: #ffffff;
+    --hover-color: var(--accent-red); /* Contrast color for hover */
+    --contact-bg: var(--darker-red); /* New background color for contact section */
+}
+
+/* General Reset and Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--primary-red);
+    background: var(--white);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background: var(--primary-red);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: var(--white);
+    background: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* Center all headings */
+h2 {
+    text-align: center;
+}
+
+/* Home Section */
+#home {
+    background: var(--white);
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.button-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between buttons */
+}
+
+.hire-me-button, .resume-button {
+    padding: 1rem 2rem; /* Adjust padding for buttons */
+    color: var(--white);
+    background: var(--primary-red);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hire-me-button:hover, .resume-button:hover {
+    background: var(--hover-color);
+    transform: scale(1.05);
+}
+
+.socia {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem; /* Space between social icons */
+    margin-top: 1rem;
+}
+
+.socia a {
+    color: var(--primary-red);
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socia a:hover {
+    color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+/* About Section */
+#about {
+    background: var(--lighter-red);
+    padding: 3rem 1rem;
+    color: var(--white);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text {
+    margin-bottom: 2rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Services Section */
+#services {
+    background: var(--white);
+    padding: 3rem 1rem;
+    color: var(--primary-red);
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Space between service boxes */
+}
+
+.service-box {
+    background: var(--muted-red);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.service-box h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.service-box p {
+    color: var(--white);
+}
+
+/* Portfolio Section */
+#portfolio {
+    background: var(--primary-red);
+    padding: 3rem 1rem;
+    color: var(--white);
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Space between portfolio items */
+}
+
+.portfolio-item {
+    background: var(--muted-red);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.portfolio-item h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.portfolio-item p {
+    color: var(--white);
+}
+
+/* Contact Section */
+#contact {
+    background: var(--contact-bg);
+    padding: 3rem 1rem;
+    color: var(--white);
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: var(--hover-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--white);
+}
+
+.contact-form {
+    background: var(--muted-red);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--darker-red);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-red);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: var(--hover-color);
+    transform: scale(1.05);
+}
+
+.contact-form .back-to-top {
+    display: block;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form .back-to-top:hover {
+    color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services-container, .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1290px) {
+    .portfolio-item {
+        width: calc(33.33% - 1rem);
+    }
+}
+
+@media (max-width: 1240px) {
+    .portfolio-item {
+        width: calc(33.33% - 1rem);
+    }
+}
+
+@media (max-width: 840px) {
+    .portfolio-item {
+        width: calc(50% - 1rem);
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 470px) {
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .back-to-top {
+        font-size: 1.2rem;
+        padding: 0.3rem;
+    }
+}

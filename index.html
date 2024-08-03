@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" data-aos="zoom-in-down">
+        <h2>PRANJALI SUBHASH KAREMORE</h2>
+        <p>Developing Electronics and Telecommunication Engineer.</p>
+        <div class="button-container">
+            <a href="#contact" class="hire-me-button">Hire Me</a>
+            <a href="resume.pdf" class="resume-button" download>Download Resume</a>
+        </div>
+        <div class="socia">
+            <a href=""><i class="ri-instagram-fill"></i></a>
+            <a href=""><i class="ri-youtube-fill"></i></a>
+            <a href=""><i class="ri-linkedin-fill"></i></a>
+            <a href=""><i class="ri-twitter-fill"></i></a>
+        </div>
+    </section>
+
+    <section id="about" data-aos="fade-in">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Eager to contribute to a team-oriented environment where I can utilize my problem-solving skills and technical expertise to develop efficient solutions that support development of society. I am interested in integration of software and hardware to create practical, scalable solutions that improve quality of life. I am avid learner who tries to upgrade self to give best results. Optimistic and enthusiastic person who is always ready to learn. Developing interest in electronics, verilog and VHDL languages. Performed well in graduation subjects. Also interested in web development. Interned at Winzera. Searching for opportunities and is very energetic about them. Very creative person, love to paint traditional styles and sketch new people and have applied best art out of waste concept. Love books to learn, for self development and to know more. Traveling and acknowledging other cultures is a favorite hobby.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="services" data-aos="fade-in">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="service-box" data-aos="fade-in">
+                <h3>Web Development</h3>
+                <div class="service-icon">
+                    <img src="fa-brands fa-web-awesome" alt="Service 1 Icon">
+                </div>
+                <p>Transform your digital presence with our web development services. We build responsive, user-friendly websites tailored to your needs, optimizing performance and enhancing user experience. Let’s bring your vision to life.</p>
+            </div>
+            <div class="service-box" data-aos="fade-in">
+                <h3>PCB Design Layout</h3>
+                <div class="service-icon">
+                    <img src="service2-icon.png" alt="Service 2 Icon">
+                </div>
+                <p>Our PCB design layout service delivers precise, high-quality circuit board designs. We ensure functionality, reliability, and manufacturability, from schematic creation to final layout. Optimize your electronic projects with us.</p>
+            </div>
+            <div class="service-box" data-aos="fade-in">
+                <h3>PCB Design (Copper Clad)</h3>
+                <div class="service-icon">
+                    <img src="service3-icon.png" alt="Service 3 Icon">
+                </div>
+                <p>For those seeking precision in copper-clad PCB design, our service provides expert solutions, ensuring high performance and reliability in every electronic project.                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" data-aos="zoom-in-down">
+        <h2>Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <h3>
+                    Light Sensor Switch using Op-Amp IC 741 on PCB 
+                </h3>
+                <p>Op-amp as comparator and LDR (Light Dependent Resistor, photosensitive material) in circuit to be used as street light. Designing  of PCB Layout (by  EasyEDA Software), Etching on copper clad, Soldering, Drilling</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Sound Detector Circuit using Op-amp</h3>
+                <p>Designed and implemented a circuit that detects sound levels in environment and provides an amplified output signal through indicators (buzzers).</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>News Website</h3>
+                <p>Developed a news website with four sections to give live update using HTML, CSS,  JS.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Weather website</h3>
+                <p>Current weather contion at the specific location can be calculated with weather temperature.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-in">
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-in">
+                <h2>My Contact</h2>
+                <p>Email: <a href="mailto:your-email@example.com">pranajlisk20@gmail.com</a></p>
+                <p>Phone: +1234567890</p>
+                <p>Address: Beltarodi, Nagpur, India</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+                    <a href="mailto:your-email@example.com">Email</a>
+                </div>
+            </div>
+            <div class="contact-form" data-aos="fade-in">
+                <h2>Get in Touch</h2>
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+                <a href="#" class="back-to-top">↑</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+
